@@ -53,41 +53,6 @@ AnnaSewa is designed as a **cloud-native, microservices-based donation platform*
 
 ---
 
-## 📂 Project Structure
-
-```text
-AnnaSewa/
-├── infrastructure/           # Terraform scripts for AWS infra
-│   ├── main.tf
-│   ├── variables.tf
-│   ├── outputs.tf
-│   └── modules/
-│
-├── backend/                  # Python FastAPI services
-│   ├── auth/                 # Authentication & authorization
-│   ├── donation/             # Food donation service
-│   ├── distribution/         # Matching donors & receivers
-│   ├── impact/               # Analytics & reports
-│   └── gateway/              # API gateway / service router
-│
-├── frontend/                 # React (Next.js) web app
-│   ├── components/
-│   ├── pages/
-│   ├── services/
-│   └── styles/
-│
-├── scripts/                  # Utility scripts (DB migrations, setup)
-├── tests/                    # Unit & integration tests
-├── docs/                     # Documentation & diagrams
-│   ├── architecture.md
-│   ├── annasewa-diagram.png
-│   └── api-specs.md
-│
-├── .github/workflows/        # CI/CD pipelines (GitHub Actions)
-├── docker-compose.yml        # Local dev environment
-├── README.md                 # Project overview
-└── LICENSE
-```
 ## 🔑 Key Features
 
 - 👥 **User Management** — Role-based access (Donor, Receiver, Admin)  
