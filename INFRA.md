@@ -9,7 +9,8 @@ AnnaSewa/
 │   ├── main.tf
 │   ├── variables.tf
 │   ├── outputs.tf
-│   └── modules/
+│   ├── providers.tf          # AWS provider config
+│   └── modules/              # Reusable infra modules (VPC, EC2, Security Groups)
 │
 ├── backend/                  # Python FastAPI services
 │   ├── auth/                 # Authentication & authorization
@@ -37,9 +38,11 @@ AnnaSewa/
 └── LICENSE
 ```
 Imagine AnnaSewa infrastructure as a multi-phase journey:
-### *Phase 1* : Builds the foundation (VPC, IGW, subnets, routes).
-### *Phase 2* : Brings the essentials (EC2, security groups, SSH keys, elastic IP).
-
+```text
+Phase 1 : Builds the foundation (VPC, IGW, subnets, routes, NAT Gateway).
+Phase 2 : Brings the essentials (EC2, security groups, SSH keys, elastic IP, S3 bucket, RDS).
+Phase 3 : Implements observability & security (CloudWatch, IAM roles, policies, backups).
+```
 # AnnaSewa Terraform Elaborated: 
 ```mermaid
 flowchart TD
