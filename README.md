@@ -13,8 +13,9 @@ It aims to **reduce food waste, fight hunger, and create stronger, more compassi
 
 ## 📦 What's Inside?
 
-- 📖 **[INFRA.md](INFRA.md)** – High Level Architecture, In-Depth Flow 
---
+- 📖 **[INFRA.md](INFRA.md)** – High Level Architecture, In-Depth Flow
+- 📖 **[ROADMAP.md](ROADMAP.md)** – 1 Month Development Plan 
+
 ## 🌍 Why AnnaSewa?
 ### Hunger Snapshot in India
 - **India ranks 105th out of 127 countries** in the **Global Hunger Index (2024)** — classified as *“serious”*.  
