@@ -1,98 +1,98 @@
 # 🍲 AnnaSewa — Food Donation Platform
-<p align="center">
+<p align="left">
 
   <!-- License -->
   <a href="https://opensource.org/licenses/Apache-2.0">
-    <img src="https://img.shields.io/badge/License-Apache_2.0-blue?style=flat-square&logo=apache" alt="License">
+    <img src="https://img.shields.io/badge/License-Apache_2.0-blue?style=flat-square&logo=apache" alt="License" style="height:22px;">
   </a>
 
   <!-- Project Status -->
-  <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square" alt="Status">
+  <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square" alt="Status" style="height:22px;">
 
   <!-- Contributions -->
   <a href="https://github.com/MrCh0p808/AnnaSewa?tab=readme-ov-file#-contribution">
-    <img src="https://img.shields.io/badge/Contributions-Welcome-blueviolet?style=flat-square&logo=github" alt="Contributions">
+    <img src="https://img.shields.io/badge/Contributions-Welcome-blueviolet?style=flat-square&logo=github" alt="Contributions" style="height:22px;">
   </a>
 
   <!-- Frontend -->
   <a href="https://react.dev/">
-    <img src="https://img.shields.io/badge/Frontend-React-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React">
+    <img src="https://img.shields.io/badge/Frontend-React-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React" style="height:22px;">
   </a>
   <a href="https://nextjs.org/docs">
-    <img src="https://img.shields.io/badge/Frontend-Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js">
+    <img src="https://img.shields.io/badge/Frontend-Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js" style="height:22px;">
   </a>
   <a href="https://tailwindcss.com/docs">
-    <img src="https://img.shields.io/badge/UI-TailwindCSS-38B2AC?style=flat-square&logo=tailwindcss&logoColor=white" alt="TailwindCSS">
+    <img src="https://img.shields.io/badge/UI-TailwindCSS-38B2AC?style=flat-square&logo=tailwindcss&logoColor=white" alt="TailwindCSS" style="height:22px;">
   </a>
 
   <!-- Backend -->
   <a href="https://www.python.org/doc/">
-    <img src="https://img.shields.io/badge/Backend-Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
+    <img src="https://img.shields.io/badge/Backend-Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" style="height:22px;">
   </a>
   <a href="https://fastapi.tiangolo.com/">
-    <img src="https://img.shields.io/badge/API-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI">
+    <img src="https://img.shields.io/badge/API-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" style="height:22px;">
   </a>
   <a href="#">
-    <img src="https://img.shields.io/badge/API-REST-02569B?style=flat-square&logo=apachespark&logoColor=white" alt="REST API">
+    <img src="https://img.shields.io/badge/API-REST-02569B?style=flat-square&logo=apachespark&logoColor=white" alt="REST API" style="height:22px;">
   </a>
   <a href="https://jwt.io/">
-    <img src="https://img.shields.io/badge/Auth-JWT-black?style=flat-square&logo=jsonwebtokens&logoColor=white" alt="JWT">
+    <img src="https://img.shields.io/badge/Auth-JWT-black?style=flat-square&logo=jsonwebtokens&logoColor=white" alt="JWT" style="height:22px;">
   </a>
 
   <!-- Databases -->
   <a href="https://www.postgresql.org/docs/">
-    <img src="https://img.shields.io/badge/Database-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL">
+    <img src="https://img.shields.io/badge/Database-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" style="height:22px;">
   </a>
   <a href="https://docs.aws.amazon.com/dynamodb/">
-    <img src="https://img.shields.io/badge/Database-DynamoDB-4053D6?style=flat-square&logo=amazon-dynamodb&logoColor=white" alt="DynamoDB">
+    <img src="https://img.shields.io/badge/Database-DynamoDB-4053D6?style=flat-square&logo=amazon-dynamodb&logoColor=white" alt="DynamoDB" style="height:22px;">
   </a>
 
   <!-- Cloud + Infra -->
   <a href="https://aws.amazon.com/">
-    <img src="https://img.shields.io/badge/Cloud-AWS-FF9900?style=flat-square&logo=amazonaws&logoColor=white" alt="AWS">
+    <img src="https://img.shields.io/badge/Cloud-AWS-FF9900?style=flat-square&logo=amazonaws&logoColor=white" alt="AWS" style="height:22px;">
   </a>
   <a href="https://docs.aws.amazon.com/ec2/">
-    <img src="https://img.shields.io/badge/Compute-EC2-FF9900?style=flat-square&logo=amazonec2&logoColor=white" alt="EC2">
+    <img src="https://img.shields.io/badge/Compute-EC2-FF9900?style=flat-square&logo=amazonec2&logoColor=white" alt="EC2" style="height:22px;">
   </a>
   <a href="https://docs.aws.amazon.com/vpc/">
-    <img src="https://img.shields.io/badge/Network-VPC-232F3E?style=flat-square&logo=amazonaws&logoColor=white" alt="VPC">
+    <img src="https://img.shields.io/badge/Network-VPC-232F3E?style=flat-square&logo=amazonaws&logoColor=white" alt="VPC" style="height:22px;">
   </a>
   <a href="https://docs.aws.amazon.com/IAM/">
-    <img src="https://img.shields.io/badge/Security-IAM-DD344C?style=flat-square&logo=amazonaws&logoColor=white" alt="IAM">
+    <img src="https://img.shields.io/badge/Security-IAM-DD344C?style=flat-square&logo=amazonaws&logoColor=white" alt="IAM" style="height:22px;">
   </a>
   <a href="https://docs.aws.amazon.com/rds/">
-    <img src="https://img.shields.io/badge/Database-RDS-527FFF?style=flat-square&logo=amazonrds&logoColor=white" alt="RDS">
+    <img src="https://img.shields.io/badge/Database-RDS-527FFF?style=flat-square&logo=amazonrds&logoColor=white" alt="RDS" style="height:22px;">
   </a>
   <a href="https://docs.aws.amazon.com/eks/">
-    <img src="https://img.shields.io/badge/Kubernetes-EKS-FF9900?style=flat-square&logo=amazoneks&logoColor=white" alt="EKS">
+    <img src="https://img.shields.io/badge/Kubernetes-EKS-FF9900?style=flat-square&logo=amazoneks&logoColor=white" alt="EKS" style="height:22px;">
   </a>
   <a href="https://developer.hashicorp.com/terraform/docs">
-    <img src="https://img.shields.io/badge/IaC-Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white" alt="Terraform">
+    <img src="https://img.shields.io/badge/IaC-Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white" alt="Terraform" style="height:22px;">
   </a>
   <a href="https://docs.docker.com/">
-    <img src="https://img.shields.io/badge/Containers-Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker">
+    <img src="https://img.shields.io/badge/Containers-Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" style="height:22px;">
   </a>
   <a href="https://kubernetes.io/docs/">
-    <img src="https://img.shields.io/badge/Orchestration-Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes">
+    <img src="https://img.shields.io/badge/Orchestration-Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes" style="height:22px;">
   </a>
   <a href="https://docs.github.com/en/actions">
-    <img src="https://img.shields.io/badge/CI%2FCD-GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions">
+    <img src="https://img.shields.io/badge/CI%2FCD-GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions" style="height:22px;">
   </a>
 
   <!-- Security + Secrets -->
   <a href="https://docs.aws.amazon.com/secretsmanager/">
-    <img src="https://img.shields.io/badge/Secrets-Manager-232F3E?style=flat-square&logo=amazonaws&logoColor=white" alt="AWS Secrets Manager">
+    <img src="https://img.shields.io/badge/Secrets-Manager-232F3E?style=flat-square&logo=amazonaws&logoColor=white" alt="AWS Secrets Manager" style="height:22px;">
   </a>
 
   <!-- Monitoring -->
   <a href="https://docs.aws.amazon.com/cloudwatch/">
-    <img src="https://img.shields.io/badge/Monitoring-CloudWatch-FF4F8B?style=flat-square&logo=amazonaws&logoColor=white" alt="CloudWatch">
+    <img src="https://img.shields.io/badge/Monitoring-CloudWatch-FF4F8B?style=flat-square&logo=amazonaws&logoColor=white" alt="CloudWatch" style="height:22px;">
   </a>
   <a href="https://prometheus.io/docs/introduction/overview/">
-    <img src="https://img.shields.io/badge/Monitoring-Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white" alt="Prometheus">
+    <img src="https://img.shields.io/badge/Monitoring-Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white" alt="Prometheus" style="height:22px;">
   </a>
   <a href="https://grafana.com/docs/">
-    <img src="https://img.shields.io/badge/Monitoring-Grafana-F46800?style=flat-square&logo=grafana&logoColor=white" alt="Grafana">
+    <img src="https://img.shields.io/badge/Monitoring-Grafana-F46800?style=flat-square&logo=grafana&logoColor=white" alt="Grafana" style="height:22px;">
   </a>
 
 </p>
