@@ -1,5 +1,5 @@
 # 🍲 AnnaSewa — Food Donation Platform
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE)
 ![Status](https://img.shields.io/badge/Status-Active-success)
 ![Contributions](https://img.shields.io/badge/Contributions-Welcome-blue)
 ![Built with Terraform](https://img.shields.io/badge/IaC-Terraform-623CE4?logo=terraform)
