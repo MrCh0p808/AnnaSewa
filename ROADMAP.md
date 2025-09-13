@@ -44,89 +44,222 @@ This issue tracks all planned work for the first month of AnnaSewa’s developme
 
 ---
 
+## 📂 GitHub Issues Breakdown
+
+# AnnaSewa — Month 1 Development Roadmap
+
+This issue tracks all planned work for the first month of AnnaSewa’s development. Each issue has sub-issues to break tasks into manageable units.
+
+---
+
 ## Phase 0 — Repo & Documentation
-- [x] #1 Initialize GitHub Repo (`.gitignore`, `README.md`, `LICENSE`)
-  - [ ] #1.1 Create `.gitignore` for Python, Node, Terraform
-  - [x] #1.2 Add basic `README.md` template
-  - [x] #1.3 Add `LICENSE` file (MIT)
-- [x] #2 Setup Documentation (`README.md`, `INFRA.md`, `ROADMAP.md`)
-  - [x] #2.1 Populate INFRA.md with architecture & Terraform workflow
-  - [x] #2.2 Add project roadmap and phases in ROADMAP.md
-  - [x] #2.3 Review README.md with project overview and dev setup
+- [x] #1 Initialize GitHub Repo
+  - **Sub-issues:**
+    - #1.1 Setup `.gitignore` for Python, Node.js, Terraform
+    - #1.2 Create initial `README.md` with project overview
+    - #1.3 Add `LICENSE` (MIT or Apache 2.0)
+- [x] #2 Setup Documentation
+  - **Sub-issues:**
+    - #2.1 Draft `INFRA.md` for Terraform infra story
+    - #2.2 Draft `ROADMAP.md` with month-wise plan
+    - #2.3 Update `README.md` with contribution guidelines
 
 ## Phase 1 — Infrastructure Foundations
-- [ ] #3 Terraform Init (S3 backend, DynamoDB lock)
-  - [ ] #3.1 Configure AWS provider and region
-  - [ ] #3.2 Setup S3 bucket for Terraform state
-  - [ ] #3.3 Configure DynamoDB table for state locking
-  - [ ] #3.4 Initialize Terraform and test backend connection
-- [ ] #4 VPC & Networking (VPC, Subnets, IGW, RTs)
-  - [ ] #4.1 Create VPC with appropriate CIDR
-  - [ ] #4.2 Create public and private subnets
-  - [ ] #4.3 Attach Internet Gateway
-  - [ ] #4.4 Create route tables and associate subnets
-  - [ ] #4.5 Setup NAT Gateway for private subnet access
-- [ ] #5 Security Baseline (IAM Roles, Security Groups)
-  - [ ] #5.1 Define IAM roles for EC2, Lambda, RDS access
-  - [ ] #5.2 Create Security Groups (SSH, HTTP, HTTPS)
-  - [ ] #5.3 Add inbound/outbound rules for essential traffic
-  - [ ] #5.4 Test connectivity via EC2 instance
+- [ ] #3 Terraform Init
+  - **Sub-issues:**
+    - #3.1 Configure S3 backend for Terraform state
+    - #3.2 Setup DynamoDB table for state locking
+    - #3.3 Test `terraform init` & backend connectivity
+- [ ] #4 VPC & Networking
+  - **Sub-issues:**
+    - #4.1 Create VPC with proper CIDR block
+    - #4.2 Setup public & private subnets
+    - #4.3 Configure Internet Gateway (IGW)
+    - #4.4 Create Route Tables and associate subnets
+    - #4.5 (Optional) Setup NAT Gateway for private subnets
+- [ ] #5 Security Baseline
+  - **Sub-issues:**
+    - #5.1 Create IAM Roles (EC2, Lambda, S3 access)
+    - #5.2 Setup Security Groups (SSH, HTTP, HTTPS)
+    - #5.3 Configure key pair generation & usage for EC2
+    - #5.4 Implement minimal policies for S3 & RDS access
 
 ## Phase 2 — Core Backend Services
-- [ ] #6 Auth Service (JWT, Donor/Receiver/Admin roles)
-  - [ ] #6.1 Setup FastAPI auth module
-  - [ ] #6.2 Implement JWT authentication & refresh tokens
-  - [ ] #6.3 Create user roles & permissions
-  - [ ] #6.4 Unit test auth endpoints
-- [ ] #7 Donation Service (CRUD donations, expiry, pickup details)
-  - [ ] #7.1 Define donation model (DB schema)
-  - [ ] #7.2 Implement CRUD endpoints
-  - [ ] #7.3 Handle donation expiry logic
-  - [ ] #7.4 Include pickup scheduling
-- [ ] #8 Impact Service MVP (meals served, CO₂ saved)
-  - [ ] #8.1 Create impact metrics schema
-  - [ ] #8.2 Implement data aggregation endpoints
-  - [ ] #8.3 Connect with donation service for live stats
-- [ ] #9 API Gateway (routing, CORS)
-  - [ ] #9.1 Setup FastAPI gateway module
-  - [ ] #9.2 Configure routes for all services
-  - [ ] #9.3 Add CORS middleware
+- [ ] #6 Auth Service
+  - **Sub-issues:**
+    - #6.1 Setup JWT authentication
+    - #6.2 Define user roles: Donor, Receiver, Admin
+    - #6.3 Implement registration & login endpoints
+- [ ] #7 Donation Service
+  - **Sub-issues:**
+    - #7.1 Create CRUD endpoints for donations
+    - #7.2 Implement expiry handling for food items
+    - #7.3 Add pickup scheduling & status tracking
+- [ ] #8 Impact Service MVP
+  - **Sub-issues:**
+    - #8.1 Track meals served
+    - #8.2 Track CO₂ saved (estimated)
+    - #8.3 Provide simple API for dashboard
+- [ ] #9 API Gateway
+  - **Sub-issues:**
+    - #9.1 Setup routing for all backend services
+    - #9.2 Configure CORS policies
+    - #9.3 Implement rate limiting (basic)
 
 ## Phase 3 — Frontend (MVP Web App)
 - [ ] #10 Setup Next.js + Tailwind
-  - [ ] #10.1 Initialize Next.js project
-  - [ ] #10.2 Install TailwindCSS and configure
-  - [ ] #10.3 Setup basic page layout and routing
-- [ ] #11 Donor Dashboard (Add Donation)
-  - [ ] #11.1 Create form to add new donations
-  - [ ] #11.2 Display donor’s active donations
-  - [ ] #11.3 Connect to backend API
-- [ ] #12 Receiver Dashboard (Claim Food)
-  - [ ] #12.1 List available donations
-  - [ ] #12.2 Add claim/accept functionality
-  - [ ] #12.3 Confirm pickup scheduling
-- [ ] #13 Admin Dashboard (Monitoring)
-  - [ ] #13.1 Display key metrics (donations, claims)
-  - [ ] #13.2 Show user activity logs
-  - [ ] #13.3 Implement basic impact dashboard
+  - **Sub-issues:**
+    - #10.1 Initialize Next.js project
+    - #10.2 Install TailwindCSS & configure styles
+    - #10.3 Setup basic folder structure (components, pages, services)
+- [ ] #11 Donor Dashboard
+  - **Sub-issues:**
+    - #11.1 Create Add Donation form
+    - #11.2 Display active donations
+    - #11.3 Connect API to backend donation service
+- [ ] #12 Receiver Dashboard
+  - **Sub-issues:**
+    - #12.1 Display available donations
+    - #12.2 Implement claim/accept food flow
+    - #12.3 Show status updates (pickup, completed)
+- [ ] #13 Admin Dashboard
+  - **Sub-issues:**
+    - #13.1 Monitor donor & receiver activity
+    - #13.2 Display impact metrics (meals, CO₂ saved)
+    - #13.3 Implement basic user management
 
 ## Phase 4 — CI/CD & Deployment
-- [ ] #14 GitHub Actions CI (Lint, Tests, Build)
-  - [ ] #14.1 Configure Python and Node.js workflows
-  - [ ] #14.2 Add linting and unit test steps
-  - [ ] #14.3 Setup build artifacts for deployment
+- [ ] #14 GitHub Actions CI
+  - **Sub-issues:**
+    - #14.1 Setup linting (Python & JS)
+    - #14.2 Setup unit & integration tests
+    - #14.3 Configure build workflow
 - [ ] #15 Dockerize Backend & Frontend
-  - [ ] #15.1 Create Dockerfile for FastAPI backend
-  - [ ] #15.2 Create Dockerfile for Next.js frontend
-  - [ ] #15.3 Setup docker-compose for local dev
-- [ ] #16 Terraform Deploy to AWS (EC2, EIP, SG)
-  - [ ] #16.1 Apply Terraform scripts for Phase 1 & 2
-  - [ ] #16.2 Verify EC2 instances, EIP, and SGs
-  - [ ] #16.3 Test backend services on deployed EC2
-- [ ] #17 Setup Monitoring (CloudWatch basic alarms)
-  - [ ] #17.1 Create CloudWatch log groups for backend
-  - [ ] #17.2 Setup CPU/Memory alarms for EC2
-  - [ ] #17.3 Configure notifications (SNS/email)
+  - **Sub-issues:**
+    - #15.1 Create Dockerfile for FastAPI backend
+    - #15.2 Create Dockerfile for Next.js frontend
+    - #15.3 Test docker-compose locally
+- [ ] #16 Terraform Deploy to AWS
+  - **Sub-issues:**
+    - #16.1 Launch EC2 instance & assign EIP
+    - #16.2 Apply Security Groups
+    - #16.3 Deploy RDS & S3 buckets
+- [ ] #17 Setup Monitoring
+  - **Sub-issues:**
+    - #17.1 Configure CloudWatch basic alarms for EC2
+    - #17.2 Add logs for backend services
+    - #17.3 Setup simple notifications (SNS/email)
+
+---
+
+## ✅ Deliverables by End of Month
+- [ ] Running **AnnaSewa MVP** on AWS EC2
+- [ ] Donor/Receiver flows tested end-to-end
+## 📂 GitHub Issues Breakdown
+
+# AnnaSewa — Month 1 Development Roadmap
+
+This issue tracks all planned work for the first month of AnnaSewa’s development. Each issue has sub-issues to break tasks into manageable units.
+
+---
+
+## Phase 0 — Repo & Documentation
+- [x] #1 Initialize GitHub Repo
+  - **Sub-issues:**
+    - #1.1 Setup `.gitignore` for Python, Node.js, Terraform
+    - #1.2 Create initial `README.md` with project overview
+    - #1.3 Add `LICENSE` (MIT or Apache 2.0)
+- [x] #2 Setup Documentation
+  - **Sub-issues:**
+    - #2.1 Draft `INFRA.md` for Terraform infra story
+    - #2.2 Draft `ROADMAP.md` with month-wise plan
+    - #2.3 Update `README.md` with contribution guidelines
+
+## Phase 1 — Infrastructure Foundations
+- [ ] #3 Terraform Init
+  - **Sub-issues:**
+    - #3.1 Configure S3 backend for Terraform state
+    - #3.2 Setup DynamoDB table for state locking
+    - #3.3 Test `terraform init` & backend connectivity
+- [ ] #4 VPC & Networking
+  - **Sub-issues:**
+    - #4.1 Create VPC with proper CIDR block
+    - #4.2 Setup public & private subnets
+    - #4.3 Configure Internet Gateway (IGW)
+    - #4.4 Create Route Tables and associate subnets
+    - #4.5 (Optional) Setup NAT Gateway for private subnets
+- [ ] #5 Security Baseline
+  - **Sub-issues:**
+    - #5.1 Create IAM Roles (EC2, Lambda, S3 access)
+    - #5.2 Setup Security Groups (SSH, HTTP, HTTPS)
+    - #5.3 Configure key pair generation & usage for EC2
+    - #5.4 Implement minimal policies for S3 & RDS access
+
+## Phase 2 — Core Backend Services
+- [ ] #6 Auth Service
+  - **Sub-issues:**
+    - #6.1 Setup JWT authentication
+    - #6.2 Define user roles: Donor, Receiver, Admin
+    - #6.3 Implement registration & login endpoints
+- [ ] #7 Donation Service
+  - **Sub-issues:**
+    - #7.1 Create CRUD endpoints for donations
+    - #7.2 Implement expiry handling for food items
+    - #7.3 Add pickup scheduling & status tracking
+- [ ] #8 Impact Service MVP
+  - **Sub-issues:**
+    - #8.1 Track meals served
+    - #8.2 Track CO₂ saved (estimated)
+    - #8.3 Provide simple API for dashboard
+- [ ] #9 API Gateway
+  - **Sub-issues:**
+    - #9.1 Setup routing for all backend services
+    - #9.2 Configure CORS policies
+    - #9.3 Implement rate limiting (basic)
+
+## Phase 3 — Frontend (MVP Web App)
+- [ ] #10 Setup Next.js + Tailwind
+  - **Sub-issues:**
+    - #10.1 Initialize Next.js project
+    - #10.2 Install TailwindCSS & configure styles
+    - #10.3 Setup basic folder structure (components, pages, services)
+- [ ] #11 Donor Dashboard
+  - **Sub-issues:**
+    - #11.1 Create Add Donation form
+    - #11.2 Display active donations
+    - #11.3 Connect API to backend donation service
+- [ ] #12 Receiver Dashboard
+  - **Sub-issues:**
+    - #12.1 Display available donations
+    - #12.2 Implement claim/accept food flow
+    - #12.3 Show status updates (pickup, completed)
+- [ ] #13 Admin Dashboard
+  - **Sub-issues:**
+    - #13.1 Monitor donor & receiver activity
+    - #13.2 Display impact metrics (meals, CO₂ saved)
+    - #13.3 Implement basic user management
+
+## Phase 4 — CI/CD & Deployment
+- [ ] #14 GitHub Actions CI
+  - **Sub-issues:**
+    - #14.1 Setup linting (Python & JS)
+    - #14.2 Setup unit & integration tests
+    - #14.3 Configure build workflow
+- [ ] #15 Dockerize Backend & Frontend
+  - **Sub-issues:**
+    - #15.1 Create Dockerfile for FastAPI backend
+    - #15.2 Create Dockerfile for Next.js frontend
+    - #15.3 Test docker-compose locally
+- [ ] #16 Terraform Deploy to AWS
+  - **Sub-issues:**
+    - #16.1 Launch EC2 instance & assign EIP
+    - #16.2 Apply Security Groups
+    - #16.3 Deploy RDS & S3 buckets
+- [ ] #17 Setup Monitoring
+  - **Sub-issues:**
+    - #17.1 Configure CloudWatch basic alarms for EC2
+    - #17.2 Add logs for backend services
+    - #17.3 Setup simple notifications (SNS/email)
 
 ---
 
@@ -136,4 +269,3 @@ This issue tracks all planned work for the first month of AnnaSewa’s developme
 - [ ] Terraform IaC in place
 - [ ] CI/CD automated with GitHub Actions
 - [ ] Impact dashboard (basic metrics)
-
