@@ -13,8 +13,8 @@ It aims to **reduce food waste, fight hunger, and create stronger, more compassi
 
 ## 📦 What's Inside?
 
-- 📖 **[INFRA.md](INFRA.md)** – High Level Architecture, In-Depth Flow
-- 📖 **[ROADMAP.md](ROADMAP.md)** – 1 Month Development Plan 
+- 📖 **[INFRA.md](~/AnnaSewa/docs/INFRA.md)** – High Level Architecture, In-Depth Flow
+- 📖 **[ROADMAP.md](~/AnnaSewa/docs/ROADMAP.md)** – 1 Month Development Plan 
 - 📖 **[APACHE 2.0 LICENSE](./LICENSE)** - Project License
 
 ## 🌍 Why AnnaSewa?
