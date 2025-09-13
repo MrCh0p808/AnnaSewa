@@ -1,22 +1,21 @@
 # 🍲 AnnaSewa — Food Donation Platform
-<p align="left">
-
-  <!-- License -->
-  <a href="https://opensource.org/licenses/Apache-2.0">
-    <img src="https://img.shields.io/badge/License-Apache_2.0-blue?style=flat-square&logo=apache" alt="License" style="height:22px;">
-  </a>
-
+<p align="center">
   <!-- Project Status -->
   <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square" alt="Status" style="height:22px;">
 
   <!-- Contributions -->
   <a href="https://github.com/MrCh0p808/AnnaSewa?tab=readme-ov-file#-contribution">
-    <img src="https://img.shields.io/badge/Contributions-Welcome-blueviolet?style=flat-square&logo=github" alt="Contributions" style="height:22px;">
+  <img src="https://img.shields.io/badge/Contributions-Welcome-blueviolet?style=flat-square&logo=github&logoColor=white" alt="Contributions" style="height:22px;">
   </a>
-
+  <!-- LinkedIn -->
+  <a href="https://www.linkedin.com/in/trideev-ganguly/">
+    <img src="https://img.shields.io/badge/Connect%20on%20LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" height="22px">
+  </a>
+</p>
+<p align="left">
   <!-- Frontend -->
   <a href="https://react.dev/">
-    <img src="https://img.shields.io/badge/Frontend-React-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React" style="height:22px;">
+    <img src="https://img.shields.io/badge/Frontend-React-61DAFB?style=flat-square&logo=react&logoColor=white" alt="React" style="height:22px;">
   </a>
   <a href="https://nextjs.org/docs">
     <img src="https://img.shields.io/badge/Frontend-Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js" style="height:22px;">
@@ -33,7 +32,7 @@
     <img src="https://img.shields.io/badge/API-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" style="height:22px;">
   </a>
   <a href="#">
-    <img src="https://img.shields.io/badge/API-REST-02569B?style=flat-square&logo=apachespark&logoColor=white" alt="REST API" style="height:22px;">
+    <img src="https://img.shields.io/badge/API-REST-02569B?style=flat-square&logo=rest&logoColor=white" alt="REST API" style="height:22px;">
   </a>
   <a href="https://jwt.io/">
     <img src="https://img.shields.io/badge/Auth-JWT-black?style=flat-square&logo=jsonwebtokens&logoColor=white" alt="JWT" style="height:22px;">
@@ -44,7 +43,7 @@
     <img src="https://img.shields.io/badge/Database-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" style="height:22px;">
   </a>
   <a href="https://docs.aws.amazon.com/dynamodb/">
-    <img src="https://img.shields.io/badge/Database-DynamoDB-4053D6?style=flat-square&logo=amazon-dynamodb&logoColor=white" alt="DynamoDB" style="height:22px;">
+    <img src="https://img.shields.io/badge/Database-DynamoDB-4053D6?style=flat-square&logo=amazondynamodb&logoColor=white" alt="DynamoDB" style="height:22px;">
   </a>
 
   <!-- Cloud + Infra -->
@@ -64,7 +63,7 @@
     <img src="https://img.shields.io/badge/Database-RDS-527FFF?style=flat-square&logo=amazonrds&logoColor=white" alt="RDS" style="height:22px;">
   </a>
   <a href="https://docs.aws.amazon.com/eks/">
-    <img src="https://img.shields.io/badge/Kubernetes-EKS-FF9900?style=flat-square&logo=amazoneks&logoColor=white" alt="EKS" style="height:22px;">
+    <img src="https://img.shields.io/badge/Kubernetes-EKS-FF9900?style=flat-square&logo=kubernetes&logoColor=white" alt="EKS" style="height:22px;">
   </a>
   <a href="https://developer.hashicorp.com/terraform/docs">
     <img src="https://img.shields.io/badge/IaC-Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white" alt="Terraform" style="height:22px;">
@@ -79,6 +78,20 @@
     <img src="https://img.shields.io/badge/CI%2FCD-GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions" style="height:22px;">
   </a>
 
+  <!-- Testing -->
+  <a href="https://docs.pytest.org/">
+    <img src="https://img.shields.io/badge/Pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white" height="22px">
+  </a>
+  <a href="https://docs.python.org/3/library/unittest.html">
+    <img src="https://img.shields.io/badge/unittest-3776AB?style=flat-square&logo=python&logoColor=white" height="22px">
+  </a>
+  <a href="https://learning.postman.com/docs/collections/using-newman-cli/">
+    <img src="https://img.shields.io/badge/Postman/Newman-FF6C37?style=flat-square&logo=postman&logoColor=white" height="22px">
+  </a>
+  <a href="https://www.selenium.dev/documentation/">
+    <img src="https://img.shields.io/badge/Selenium-43B02A?style=flat-square&logo=selenium&logoColor=white" height="22px">
+  </a>
+
   <!-- Security + Secrets -->
   <a href="https://docs.aws.amazon.com/secretsmanager/">
     <img src="https://img.shields.io/badge/Secrets-Manager-232F3E?style=flat-square&logo=amazonaws&logoColor=white" alt="AWS Secrets Manager" style="height:22px;">
@@ -86,7 +99,7 @@
 
   <!-- Monitoring -->
   <a href="https://docs.aws.amazon.com/cloudwatch/">
-    <img src="https://img.shields.io/badge/Monitoring-CloudWatch-FF4F8B?style=flat-square&logo=amazonaws&logoColor=white" alt="CloudWatch" style="height:22px;">
+    <img src="https://img.shields.io/badge/Monitoring-CloudWatch-FF4F8B?style=flat-square&logo=amazoncloudwatch&logoColor=white" alt="CloudWatch" style="height:22px;">
   </a>
   <a href="https://prometheus.io/docs/introduction/overview/">
     <img src="https://img.shields.io/badge/Monitoring-Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white" alt="Prometheus" style="height:22px;">
@@ -95,6 +108,10 @@
     <img src="https://img.shields.io/badge/Monitoring-Grafana-F46800?style=flat-square&logo=grafana&logoColor=white" alt="Grafana" style="height:22px;">
   </a>
 
+  <!-- License -->
+  <a href="https://opensource.org/licenses/Apache-2.0">
+    <img src="https://img.shields.io/badge/License-Apache_2.0-blue?style=flat-square&logo=apache&logoColor=white" alt="License" style="height:22px;">
+  </a>
 </p>
 
 
