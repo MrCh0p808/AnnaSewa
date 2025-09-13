@@ -10,7 +10,7 @@
   <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square" alt="Status">
 
   <!-- Contributions -->
-  <a href="CONTRIBUTING.md">
+  <a href="https://github.com/MrCh0p808/AnnaSewa?tab=readme-ov-file#-contribution">
     <img src="https://img.shields.io/badge/Contributions-Welcome-blueviolet?style=flat-square&logo=github" alt="Contributions">
   </a>
 
