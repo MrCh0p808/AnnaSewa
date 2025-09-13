@@ -62,34 +62,52 @@ The platform is designed to:
 
 ```text
 AnnaSewa/
-├── infrastructure/           # Terraform configs
-│   ├── main.tf
-│   ├── variables.tf
-│   ├── outputs.tf
-│   └── modules/
+├── infra/                         # Infrastructure as Code (Terraform on AWS)
+│   ├── backend.tf                 # Remote backend (S3 + DynamoDB) for storing Terraform state
+│   ├── provider.tf                # Terraform + AWS provider version & authentication setup
+│   ├── network.tf                 # VPC, subnets, route tables, internet/NAT gateways, security groups
+│   ├── compute.tf                 # EC2 instances, Auto Scaling Groups, and SSH key pair
+│   ├── database.tf                # RDS (Postgres/MySQL) + Secrets Manager for credentials
+│   ├── repo.tf                    # ECR repositories for container images
+│   ├── variables.tf               # Input variables for reusability across modules
+│   ├── locals.tf                  # Centralized naming, tagging, and common expressions
+│   ├── outputs.tf                 # Exported values (IPs, DNS, DB endpoints) for integration
+│   └── monitoring.tf (future)     # CloudWatch logs, alarms, dashboards (to be added later)
 │
-├── backend/                  # Python FastAPI microservices
-│   ├── auth/                 # Authentication & authorization
-│   ├── donation/             # Food donation service
-│   ├── distribution/         # Matching donors & receivers
-│   ├── impact/               # Analytics & reporting
-│   └── gateway/              # API gateway
+├── backend/                       # Backend (Python FastAPI microservices)
+│   ├── common/                    # Shared utilities (logging, database connection, config, models)
+│   ├── auth/                      # Authentication & authorization service
+│   ├── donation/                  # Food donation management (CRUD APIs)
+│   ├── distribution/              # Matching donors with receivers intelligently
+│   ├── impact/                    # Analytics, reporting, impact measurement
+│   └── gateway/                   # API gateway routing requests to microservices
 │
-├── frontend/                 # React (Next.js) web app
-│   ├── components/
-│   ├── pages/
-│   ├── services/
-│   └── styles/
+├── frontend/                      # Frontend (React / Next.js web application)
+│   ├── components/                # Reusable UI components (buttons, forms, cards, etc.)
+│   ├── pages/                     # Next.js pages (routes)
+│   ├── services/                  # API call wrappers to backend services
+│   ├── styles/                    # Global styles, Tailwind config, and theme files
+│   └── public/ (optional)         # Static assets (logos, icons, images)
 │
-├── tests/                    # Unit & integration tests
-├── docs/                     # Documentation & diagrams
-│   ├── INFRA.md              # Infra Deep Dive (Terraform + AWS)
-│   └── architecture.png
+├── tests/                         # Global unit + integration tests
+│   ├── backend_tests/             # Tests for backend services (pytest)
+│   ├── frontend_tests/            # Tests for frontend (Jest / React Testing Library)
+│   └── infra_tests/               # Infra testing (Terratest / AWS InSpec)
 │
-├── .github/workflows/        # CI/CD pipelines
-├── docker-compose.yml        # Local development
-├── README.md                 # Project overview
-└── LICENSE
+├── docs/                          # Documentation, diagrams & plans
+│   ├── INFRA.md                   # Deep dive into Terraform + AWS infra
+│   ├── ROADMAP.md                 # Development milestones & release plan
+│   └── ARCHITECTURE.png           # System architecture diagram
+│
+├── .github/workflows/             # GitHub Actions pipelines
+│   ├── ci.yml                     # Build + Test (lint, unit tests, security checks)
+│   └── cd.yml                     # Deploy (Terraform apply + service deploy)
+│
+├── docker-compose.yml              # Local development stack (DB, services, frontend)
+├── .env.example                    # Example environment variables (copy to `.env`)
+├── Makefile                        # Shortcut commands (init, deploy, test, clean)
+├── README.md                       # High-level overview of the project
+└── LICENSE                         # Apache 2.0 License (Open Source)
 ```
 
 ## 🔑 Key Features
