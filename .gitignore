@@ -24,3 +24,7 @@ __pycache__/
 .pytest_cache/
 .coverage
 htmlcov/
+
+docs/ROADMAP_M2.md
+docs/ROADMAP_M3.md
+docs/ROADMAP_M4.md
