@@ -3,23 +3,35 @@ FastAPI application root:
 - mounts health router
 - request-logging middleware that logs timestamp, path, method, duration
 - global exception handlers for HTTP and generic exceptions
+- CORS middleware for frontend <-> backend communication
 """
 import time
 from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse
 from starlette.exceptions import HTTPException as StarletteHTTPException
-
+from fastapi.middleware.cors import CORSMiddleware
 from app.api import health as health_module  # router defined in app/api/health.py
 from app.utils.logger import logger
 from app.config import settings
 
 app = FastAPI(title="AnnaSewa API", version=settings.API_VERSION)
 
+# ✅ CORS configuration (allow frontend to call backend)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:5173",  # React dev server
+        "http://127.0.0.1:5173"
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 # Request logging middleware: logs start + end with duration and timestamp
 @app.middleware("http")
 async def request_logging_middleware(request: Request, call_next):
     start_ts = time.time()
-    # log request start
     logger.info({
         "event": "request_start",
         "method": request.method,
@@ -32,7 +44,6 @@ async def request_logging_middleware(request: Request, call_next):
         response = await call_next(request)
         return response
     except Exception as exc:
-        # re-raise so exception handlers run, but log it
         logger.error({"event": "exception_during_request", "error": str(exc)})
         raise
     finally:
@@ -49,7 +60,6 @@ async def request_logging_middleware(request: Request, call_next):
 # Exception handler for HTTP errors (including 404)
 @app.exception_handler(StarletteHTTPException)
 async def http_exception_handler(request: Request, exc: StarletteHTTPException):
-    # Log the http exception (e.g., 404)
     logger.warning({
         "event": "http_exception",
         "path": request.url.path,
@@ -66,9 +76,8 @@ async def unhandled_exception_handler(request: Request, exc: Exception):
         "path": request.url.path,
         "error": str(exc)
     })
-    # Do not reveal internals to clients
     return JSONResponse(status_code=500, content={"detail": "Internal Server Error"})
 
-# include routers
+# Routers
 app.include_router(health_module.router)
 
