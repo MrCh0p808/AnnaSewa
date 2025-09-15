@@ -6,6 +6,7 @@ FastAPI application root:
 - CORS middleware for frontend <-> backend communication
 """
 import time
+from app.api import status as status_module
 from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse
 from starlette.exceptions import HTTPException as StarletteHTTPException
@@ -80,4 +81,5 @@ async def unhandled_exception_handler(request: Request, exc: Exception):
 
 # Routers
 app.include_router(health_module.router)
+app.include_router(status_module.router)
 
