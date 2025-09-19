@@ -115,6 +115,9 @@ The platform is designed to:
 
 ## 📂 Project Structure
 
+<img width="3840" height="3386" alt="VOTEWAVE PHASE 2 HL Architechture" src="https://github.com/user-attachments/assets/6f45df8d-cfe7-49cc-83ea-1cdb50630718" />
+
+
 ```text
 AnnaSewa/
 ├── infra/                         # Infrastructure as Code (Terraform on AWS)
